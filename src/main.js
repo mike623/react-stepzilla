@@ -279,7 +279,9 @@ export default class StepZilla extends Component {
     let cloneExtensions = {
       jumpToStep: (t) => {
         this.jumpToStep(t);
-      }
+      },
+      currentStep: this.state.compState,
+      isLastStep: this.state.compState === this.props.steps.length,
     };
 
     const componentPointer = this.props.steps[this.state.compState].component;
