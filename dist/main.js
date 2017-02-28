@@ -364,7 +364,7 @@ var StepZilla = function (_Component) {
           _this6.jumpToStep(t);
         },
         currentStep: this.state.compState,
-        isLastStep: this.state.compState === this.props.steps.length
+        isLastStep: this.state.compState + 1 === this.props.steps.length
       };
 
       var componentPointer = this.props.steps[this.state.compState].component;

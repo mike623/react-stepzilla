@@ -281,7 +281,7 @@ export default class StepZilla extends Component {
         this.jumpToStep(t);
       },
       currentStep: this.state.compState,
-      isLastStep: this.state.compState === this.props.steps.length,
+      isLastStep: this.state.compState + 1 === this.props.steps.length,
     };
 
     const componentPointer = this.props.steps[this.state.compState].component;
